@@ -4,9 +4,8 @@ module.exports.run = async (bot, message, args) => {
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!rUser) return message.channel.send("Couldn't find user.");
     let rreason = args.join(" ").slice(22);
-    let staff = message.server.roles.get('name', '🚧 Staff Team 🚧');
     let reportEmbed = new Discord.RichEmbed()
-    .setTitle("**__New report: ${staff}__**")
+    .setTitle("**__New report: ${571841183622496270}__**")
     .setColor("#f54242")
     .addField("Reported User", `${rUser} with ID: ${rUser.id}`)
     .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
