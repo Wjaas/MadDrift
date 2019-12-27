@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     let rreason = args.join(" ").slice(22);
     let reportEmbed = new Discord.RichEmbed()
     .setTitle("**__New report:__**")
-    .setDescription('<@571841183622496270>')
+    .setDescription('<@&571841183622496270>')
     .setColor("#f54242")
     .addField("Reported User", `${rUser} with ID: ${rUser.id}`)
     .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
