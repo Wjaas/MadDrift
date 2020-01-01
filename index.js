@@ -44,18 +44,18 @@ bot.on("ready", async () => {
 
 
 bot.on('guildMemberAdd', member => {
-  member.addRole(member.guild.roles.find(role => role.name === "🖐Member"));
+  member.addRole(member.guild.roles.find(role => role.name === "Member"));
 const exampleEmbed = new Discord.RichEmbed()
  .setThumbnail(member.user.displayAvatarURL)    
  .setColor('#f54242')
  .setTitle('New member!')
    .setDescription('Welcome to **' + member.guild.name + ', ' + member.user + '!**')
-   .addField('***Tip:***', 'Remember to read ' + `<#654399031992254495>` + ' before you enter the server!' + ' Enjoy your stay!')
- .setFooter('Bots made by Wjaas', 'https://i.imgur.com/CXI19Xn.png')
+   .addField('***Tip:***', 'Remember to read ' + `<#628009813577826314>` + ' before you enter the server!' + ' Enjoy your stay!')
+ .setFooter('Bots made by Mad Drift', 'https://i.imgur.com/gT7QfxH.png')
  .setTimestamp()
 
 
-member.guild.channels.get('571321646842118174').send(exampleEmbed);
+member.guild.channels.get('571032564320567329').send(exampleEmbed);
 })
 
 
@@ -65,8 +65,8 @@ member.guild.channels.get('571321646842118174').send(exampleEmbed);
 
 // Server stats below --------------------------------------------------------
 const serverStats = {
-  guildID: '485469217001439252',
-  totalUsersID: '571842370367258638',
+  guildID: '555749267667550251',
+  totalUsersID: '661764105170059285',
 };
 
 bot.on('guildMemberAdd', member => {

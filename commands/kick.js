@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Kicked In", message.channel)
     .addField("Time", message.createdAt)
     .addField("Reason", kReason)
-    .setFooter('Bots made by Wjaas', 'https://i.imgur.com/CXI19Xn.png');
+    .setFooter('Bots made by Mad Drift', 'https://i.imgur.com/gT7QfxH.png');
 
     let kickChannel = message.guild.channels.find(`name`, "bans-and-kicks");
     if(!kickChannel) return message.channel.send("Can't find bans-and-kicks channel.");

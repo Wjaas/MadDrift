@@ -6,7 +6,7 @@ let exampleEmbed = new Discord.RichEmbed()
         .setTitle(args.join(' '))
       	.setDescription('React with ✅ if you agree or ❌ if you disagree.')
         .addField('**Suggested by **', message.author)
-        .setFooter('Bots made by Wjaas', 'https://i.imgur.com/CXI19Xn.png')
+        .setFooter('Bots made by Mad Drift', 'https://i.imgur.com/gT7QfxH.png')
         .setTimestamp()
     
     let channel = message.guild.channels.find(`name`, "💭suggestions");

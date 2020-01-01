@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Channels", message.guild.channels.size)
     .addField("You Joined", message.member.joinedAt)
     .addField("Discord created:", message.guild.createdAt)
-    .setFooter('Bots made by Wjaas', 'https://i.imgur.com/CXI19Xn.png')
+    .setFooter('Bots made by Mad Drift', 'https://i.imgur.com/gT7QfxH.png')
     .setTimestamp()
 
     message.delete().catch(O_o=>{});
