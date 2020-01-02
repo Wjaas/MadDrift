@@ -9,8 +9,8 @@ let exampleEmbed = new Discord.RichEmbed()
         .setFooter('Bots made by Mad Drift', 'https://i.imgur.com/gT7QfxH.png')
         .setTimestamp()
     
-    let channel = message.guild.channels.find(`name`, "💭suggestions");
-    if(!channel) return message.channel.send("Can't find 💭suggestions channel.");
+    let channel = message.guild.channels.find(`name`, "suggestions");
+    if(!channel) return message.channel.send("Can't find suggestions channel.");
     
     message.delete().catch(O_o=>{});
     channel.send(exampleEmbed).then(embedMessage => {
