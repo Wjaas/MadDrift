@@ -35,10 +35,14 @@ bot.on("message", async message => {
 
 });
 
+
+const guild = bot.guilds.get('555749267667550251');
+var userCount = guild.memberCount;
+
 bot.on("ready", async () => {
   bot.user.setStatus('dnd'); 
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers with ${bot.users.size} members!`);
-  bot.user.setActivity(` ${guild.memberCount} people`, { type: 'WATCHING' });
+  bot.user.setActivity(` ${userCount} people`, { type: 'WATCHING' });
 
 });
 
