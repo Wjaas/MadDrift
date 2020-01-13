@@ -38,7 +38,7 @@ bot.on("message", async message => {
 
 
 bot.on("ready", async () => {
-  let myGuild = client.guilds.get('555749267667550251')
+  let myGuild = bot.guilds.get('555749267667550251')
   let userCount = myGuild.memberCount;
   bot.user.setStatus('dnd'); 
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers with ${bot.users.size} members!`);
