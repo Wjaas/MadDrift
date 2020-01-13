@@ -38,7 +38,7 @@ bot.on("message", async message => {
 bot.on("ready", async () => {
   bot.user.setStatus('dnd'); 
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers with ${bot.users.size} members!`);
-  bot.user.setActivity(` ${bot.users.size} people`, { type: 'WATCHING' });
+  bot.user.setActivity(` ${guild.memberCount} people`, { type: 'WATCHING' });
 
 });
 
